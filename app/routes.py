@@ -1,6 +1,41 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return '<p>My friend told me they knew how to program</p>' + '<b>...they knew</b><img src="data:image/png;base64,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" alt="HTML" height=42 width=42><b> :/</b>'
+    return render_template("index.html")
+
+@app.route('/artist/<artist_name>')
+def view_artist(artist_name):
+    artist = {
+        "artist_id": 1,
+        "artist_name": artist_name,
+        "artist_info": "some fake artist info"
+    }
+    return render_template("artist.html", artist=artist)
+
+@app.route('/artists')
+def list_artists():
+    artist_list = [
+        {
+            "artist_id": 1,
+            "artist_name": "Eric Clapton",
+            "artist_info": "Some info"
+        },
+        {
+            "artist_id": 2,
+            "artist_name": "The Beatles",
+            "artist_info": "Some info about the Beatles. John Lennon, Paul McCartney, George Harrison, and Ringo Starr are the best"
+        },
+        {
+            "artist_id": 3,
+            "artist_name": "Jon Bellion",
+            "artist_info": ""
+        }
+    ]
+    return render_template("artistList.html", artist_list=artist_list)
+
+@app.route('/newArtist')
+def create_artist():
+    return render_template("newArtist.html")
