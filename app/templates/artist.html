@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{artist.artist_name}}</h1>
+<h1>{{ artist.name }}</h1>
 
-<p>Artist Info: {{artist.artist_info}}</p>
+<h4>Hometown: {{ artist.hometown }}</h4>
+
+<p>Artist Info: {{ artist.info }}</p>
+
+<b> Upcoming Events: </b>
+{% if artist.events %}
+    {% for event in artist.events %}
+        <ul id="eventsList">
+            <li>{{ event }}</li>
+        </ul>
+    {% endfor %}
+{% endif %}
 {% endblock %}

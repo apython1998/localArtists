@@ -2,6 +2,6 @@
 
 {% block content %}
     {% for artist in artist_list %}
-        <p> Artist {{artist.artist_id}} : <a href="/artist/{{artist.artist_name}}"> {{artist.artist_name}}</a></p>
+        <b><a href="{{ url_for('view_artist', artist_name=artist.name) }}"><t></t> {{artist.name}}</a></b><br>
     {% endfor %}
 {% endblock %}
