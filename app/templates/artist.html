@@ -16,14 +16,16 @@
 
 <h4>Hometown: {{ artist.hometown }}</h4>
 
-<p>Artist Info: {{ artist.info }}</p>
+<p>Artist Info: {{ artist.description }}</p>
 
-<b> Upcoming Events: </b>
+<b> Upcoming Events: </b> <br>
 {% if artist.events %}
     {% for event in artist.events %}
         <ul id="eventsList">
-            <li>{{ event }}</li>
+            <li>{{ event.name }} @ {{ event.venue.name }} on <b>{{ event.time.strftime('%A, %b %d, %Y') }}</b></li>
         </ul>
     {% endfor %}
+{% else %}
+    <b> No Events! </b>
 {% endif %}
 {% endblock %}

@@ -1,20 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+    </div>
     <h1>Create an Artist</h1>
     <form action="" method="post">  <!-- action="" means submit to current url, if submitting a form method=post -->
         {{ form.hidden_tag() }}
         <p>
             {{ form.name.label }} <br>
-            {{ form.name(size=32) }}
+            {{ form.name(size=48) }}
         </p>
         <p>
             {{ form.hometown.label }} <br>
-            {{ form.hometown(size=80) }}
+            {{ form.hometown(size=48) }}
         </p>
         <p>
             {{ form.description.label }} <br>
-            {{ form.description() }}
+            {{ form.description(rows=12, cols = 48) }}
         </p>
         <p>
             {{ form.submit() }}
