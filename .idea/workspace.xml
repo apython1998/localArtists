@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e23e6c6-e98e-4559-beb0-838be767b245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/artist.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/artist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/newArtist.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newArtist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_artists.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_artists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artist_to_event.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/artist_to_event.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/events.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/events.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/venues.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/venues.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/localArtists$localArtists.coverage" NAME="localArtists Coverage Results" MODIFIED="1536081215184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/local_artists$local_artists.coverage" NAME="local_artists Coverage Results" MODIFIED="1538502879421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/local_artists$local_artists.coverage" NAME="local_artists Coverage Results" MODIFIED="1538585559890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/local_artists$localArtists.coverage" NAME="local_artists Coverage Results" MODIFIED="1536084313080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/microblog$microblog.coverage" NAME="microblog Coverage Results" MODIFIED="1535588907075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
@@ -160,24 +156,24 @@
     <session id="1648372950">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="126" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="904" />
-          <entry key="py" value="6985" />
+          <entry key="py" value="7168" />
           <entry key="sql" value="22" />
           <entry key="txt" value="21" />
         </counts>
@@ -185,8 +181,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="904" />
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Python" value="6985" />
+          <entry key="PLAIN_TEXT" value="149" />
+          <entry key="Python" value="7168" />
           <entry key="Scratch" value="22" />
         </counts>
       </usages-collector>
@@ -195,13 +191,13 @@
           <entry key="DATABASE/67aaf7d7-1ae4-442c-805f-9a229ae288f4" value="1" />
           <entry key="artist" value="18" />
           <entry key="artist_to_event" value="10" />
-          <entry key="csv" value="10" />
+          <entry key="csv" value="17" />
           <entry key="event" value="7" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="31" />
+          <entry key="html" value="32" />
           <entry key="ini" value="1" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="41" />
+          <entry key="py" value="43" />
           <entry key="sql" value="4" />
           <entry key="venue" value="2" />
         </counts>
@@ -209,11 +205,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="37" />
-          <entry key="HTML" value="31" />
+          <entry key="HTML" value="32" />
           <entry key="Image" value="1" />
           <entry key="Ini" value="1" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="41" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="43" />
           <entry key="Scratch" value="4" />
           <entry key="UML" value="1" />
         </counts>
@@ -224,42 +220,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state relative-caret-position="267">
+              <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
               <folding>
-                <element signature="e#0#68#0" expanded="true" />
-                <marker date="1538502755498" expanded="true" signature="310:313" ph="..." />
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1538502849939" expanded="true" signature="260:263" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://28ba7fe3-a853-459e-9433-b44b0509f328/schema/main/table/artist_to_event">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://28ba7fe3-a853-459e-9433-b44b0509f328/schema/main/table/artist">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://28ba7fe3-a853-459e-9433-b44b0509f328/schema/main/table/event">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-356">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -276,8 +257,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url_for</find>
       <find>artist_to_event</find>
+      <find>url_for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -297,14 +278,16 @@
         <option value="$PROJECT_DIR$/app/forms.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/data/artist_to_event.csv" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/67aaf7d7-1ae4-442c-805f-9a229ae288f4/console.sql" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/templates/artist.html" />
         <option value="$PROJECT_DIR$/app/templates/newArtist.html" />
         <option value="$PROJECT_DIR$/local_artists.py" />
-        <option value="$PROJECT_DIR$/app/routes.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/data/events.csv" />
+        <option value="$PROJECT_DIR$/data/venues.csv" />
+        <option value="$PROJECT_DIR$/data/artist_to_event.csv" />
+        <option value="$PROJECT_DIR$/app/routes.py" />
       </list>
     </option>
   </component>
@@ -413,15 +396,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19456366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -437,7 +419,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +432,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/routes.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/bin/flask">
@@ -540,19 +533,6 @@
     <entry file="file://$PROJECT_DIR$/data/artists.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/venues.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/events.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/artist_to_event.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/artistList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -560,20 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/venue">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/venue" />
     <entry file="uml://DATABASE/67aaf7d7-1ae4-442c-805f-9a229ae288f4">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -595,6 +562,7 @@
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -605,27 +573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/artist_to_event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/artist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/artist_to_event" />
+    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/event" />
+    <entry file="das://67aaf7d7-1ae4-442c-805f-9a229ae288f4/schema/main/table/artist" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/67aaf7d7-1ae4-442c-805f-9a229ae288f4/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,17 +598,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28ba7fe3-a853-459e-9433-b44b0509f328/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1538502849939" expanded="true" signature="260:263" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="das://28ba7fe3-a853-459e-9433-b44b0509f328/schema/main/table/artist_to_event">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -684,13 +620,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/events.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/venues.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/artist_to_event.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1538502849939" expanded="true" signature="260:263" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        <state relative-caret-position="-356">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1538502755498" expanded="true" signature="310:313" ph="..." />
           </folding>
         </state>
       </provider>

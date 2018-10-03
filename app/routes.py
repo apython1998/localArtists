@@ -3,6 +3,7 @@ from app import app, db
 from app.models import Artist, Event, Venue, ArtistToEvent
 from app.forms import NewArtistForm
 from datetime import datetime
+from sqlalchemy import func
 
 
 @app.route('/')
@@ -52,14 +53,10 @@ def reset_db():
         ArtistToEvent(artist_id=4, event_id=1),
         ArtistToEvent(artist_id=5, event_id=4)
     ]
-    for artist in default_artists:
-        db.session.add(artist)
-    for venue in default_venues:
-        db.session.add(venue)
-    for event in default_events:
-        db.session.add(event)
-    for a_to_e in default_a_to_e:
-        db.session.add(a_to_e)
+    db.session.add_all(default_artists)
+    db.session.add_all(default_venues)
+    db.session.add_all(default_events)
+    db.session.add_all(default_a_to_e)
     db.session.commit()
     return redirect(url_for('index'))
 
@@ -72,7 +69,7 @@ def view_artist(artist_name):
 
 @app.route('/artists')
 def list_artists():
-    artist_list = Artist.query.order_by(Artist.name).all()
+    artist_list = Artist.query.order_by(func.lower(Artist.name)).all()
     return render_template("artistList.html", artist_list=artist_list)
 
 
@@ -81,7 +78,7 @@ def new_artist():
     form = NewArtistForm()
     if form.validate_on_submit():
         if Artist.query.filter_by(name=form.name.data).count() > 0:
-            flash('Error! ' + form.name.data + ' with that name has already been created!')
+            flash('Error! Artist ' + form.name.data + ' has already been created!')
             return redirect(url_for('new_artist'))
         else:
             form_artist = Artist(name=form.name.data, hometown=form.hometown.data, description=form.description.data)
