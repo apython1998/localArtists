@@ -1,17 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div>
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-        {% for message in messages %}
-        <li>{{ message }} </li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-{% endwith %}
-</div>
 
 Welcome to IthacArtists, your one stop shop for local musicians and music events!
 {% endblock %}

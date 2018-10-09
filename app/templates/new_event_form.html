@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Create an Event</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }} <br>
+            {{ form.name(size=64) }}
+        </p>
+        <p>
+            {{ form.time.label }} (YYYY-MM-DD HR:MIN:SEC) <br>
+            {{ form.time() }}
+            {% for error in form.time.errors %} <br>
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.venue.label }}
+            {{ form.venue() }}
+        </p>
+        <a href="{{ url_for('new_venue') }}">Don't see the right venue? Add One!</a>
+        <p>
+            {{ form.artists.label }}
+            {{ form.artists(size=5) }}
+        </p>
+        <a href="{{ url_for('new_artist') }}">Don't see the right artist? Add One!</a>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+{% endblock %}

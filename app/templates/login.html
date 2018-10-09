@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Sign In</h1>
+    <form action="" method="post">  <!-- action="" means submit to current url, if submitting a form method=post -->
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }} <br>
+            {{ form.username(size=32) }} <!-- Set input size to 32 chars -->
+            {% for error in form.username.errors %} <br>
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }} <br>
+            {{ form.password(size=32) }} <br>  <!-- Set input size to 32 chars -->
+            {% for error in form.password.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.remember_me() }} {{ form.remember_me.label }} <br>
+            {{ form.submit() }}
+        </p>
+    </form>
+    <p>New User? <a href="{{ url_for('register') }}">Register Now!</a></p>
+{% endblock %}
