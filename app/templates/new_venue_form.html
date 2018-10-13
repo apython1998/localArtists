@@ -1,19 +1,11 @@
 {% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
 
-{% block content %}
+{% block app_content %}
     <h1>Create a Venue</h1>
-    <form action="" method="post">  <!-- action="" means submit to current url, if submitting a form method=post -->
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.name.label }} <br>
-            {{ form.name(size=64) }}
-        </p>
-        <p>
-            {{ form.address.label }} <br>
-            {{ form.address(size=64) }}
-        </p>
-        <p>
-            {{ form.submit() }}
-        </p>
-    </form>
+    <div class="row">
+        <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
 {% endblock %}

@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
-{% block content %}
-    {% for artist in artist_list %}
-        <b><a href="{{ url_for('view_artist', artist_name=artist.name) }}"><t></t> {{artist.name}}</a></b><br>
-    {% endfor %}
+{% block app_content %}
+    <table class="table table-bordered bg-light table-hover">
+        {% for artist in artist_list %}
+        <tr>
+            <td>
+                <b><a href="{{ url_for('view_artist', artist_name=artist.name) }}">
+                    {{artist.name}}
+                </a></b>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

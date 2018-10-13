@@ -1,3 +1,9 @@
 FLASK_APP=local_artists.py
 FLASK_ENV=development
-FLASK_DEBUG=False
+FLASK_DEBUG=0
+MAIL_SERVER=smtp.googlemail.com
+MAIL_PORT=25
+MAIL_USE_TLS=1
+MAIL_USERNAME=ithacArtists.throwaway@gmail.com
+MAIL_PASSWORD=asdfasdf1!
+ADMINS=ithacArtists.throwaway@gmail.com
