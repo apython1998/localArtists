@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from flask_login import current_user
-from wtforms import StringField, TextAreaField, PasswordField, BooleanField, DateTimeField, \
+from wtforms import StringField, TextAreaField, PasswordField, BooleanField, DateField, \
     SelectField, SelectMultipleField, SubmitField
 from wtforms.validators import DataRequired, EqualTo, Email, Length, ValidationError
 from app.models import User
@@ -21,7 +21,7 @@ class NewVenueForm(FlaskForm):
 
 class NewEventForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired(), Length(max=128)])
-    time = DateTimeField('Start Time', format='%Y-%m-%d %H:%M:%S')
+    time = DateField('Start Time', format='%m/%d/%Y', id='timepick')
     venue = SelectField('Venue', coerce=int)
     artists = SelectMultipleField('Artists', coerce=int)
     submit = SubmitField('Submit')

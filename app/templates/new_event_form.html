@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% import 'bootstrap/wtf.html' as wtf %}
 
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+{% endblock %}
+
 {% block app_content %}
     <h1>Create an Event</h1>
     <div class="row">
@@ -21,4 +26,15 @@
             <a id="venue" href="{{ url_for('new_venue') }}" class="btn btn-outline-info" role="button">Create One!</a>
         </div>
      </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $('#timepick').datepicker();
+        });
+    </script>
 {% endblock %}
